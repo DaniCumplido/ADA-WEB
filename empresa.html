@@ -17,7 +17,7 @@
     <!-- NAVBAR -->
     <div class="fixed-top" style="background-color: #0E0E0E;">
         <div class="container">
-            <nav class="navbar navbar-expand-lg rounded">
+            <nav class="navbar navbar-expand-lg rounded navbar-dark">
                 <div class="container-fluid">
                     <a href="index.html"
                         class="d-flex align-items-center navbar-brand col-lg-3 me-0 text-decoration-none">
@@ -51,9 +51,6 @@
                                 <li><a href="proyectos.html"
                                         class="nav-link text-light fw-semibold nav-link-efecto px-2">PROYECTOS</a>
                                 </li>
-                                <li><a href="servicios.html"
-                                        class="nav-link text-light fw-semibold nav-link-efecto px-2">SERVICIOS</a>
-                                </li>
                             </ul>
                             <div class="d-lg-flex col-lg-4 justify-content-lg-end mt-lg-0 mt-3">
                                 <a href="contacto.html" type="button" class="btn ">CONTACTAR</a>
@@ -84,9 +81,10 @@
         <div class="row align-items-center g-4">
             <!-- IMAGEN -->
             <div class="col-10 col-sm-8 col-lg-6" style="max-height: 400px; overflow: hidden;">
-                <img src="img/img-tienda.jpeg" class="rounded img-fluid" style=" position: relative; top: -230px;" alt="Oficina y taller">
-            </div>            
-            
+                <img src="img/img-tienda.jpeg" class="rounded img-fluid" style="position: relative; top: -230px;"
+                    alt="Oficina y taller">
+            </div>
+
             <!-- TEXTO + ESTADÍSTICAS -->
             <div class="col-lg-6">
                 <div class="text-center mb-4">
@@ -135,13 +133,13 @@
     <div class="container col-xxl-8 px-4 py-5">
         <!-- IMÁGEN -->
         <div class="row">
-            <div class="col-md-4" data-aos="zoom-in-up">
+            <div class="col-md-4 mb-3" data-aos="zoom-in-up">
                 <img src="img/nosotros1.JPG" class="rounded img-fluid" alt="Trabajando">
             </div>
-            <div class="col-md-4" data-aos="zoom-in-up">
+            <div class="col-md-4 mb-3" data-aos="zoom-in-up">
                 <img src="img/nosotros2.JPG" class="rounded img-fluid" alt="Trabajando">
             </div>
-            <div class="col-md-4" data-aos="zoom-in-up">
+            <div class="col-md-4 mb-3" data-aos="zoom-in-up">
                 <img src="img/nosotros3.jpg" class="rounded img-fluid" alt="Trabajando">
             </div>
         </div>
@@ -196,11 +194,7 @@
                         <li class="nav-item"><a href="empresa.html"
                                 class="nav-link px-2 text-light nav-link-efecto">Empresa</a></li>
                         <li class="nav-item"><a href="proyectos.html"
-                                class="nav-link px-2 text-light nav-link-efecto">Proyectos</a>
-                        </li>
-                        <li class="nav-item"><a href="servicios.html"
-                                class="nav-link px-2 text-light nav-link-efecto">Servicios</a>
-                        </li>
+                                class="nav-link px-2 text-light nav-link-efecto">Proyectos</a></li>
                         <li class="nav-item"><a href="contacto.html"
                                 class="nav-link px-2 text-light nav-link-efecto">Contacto</a></li>
                     </ul>
@@ -209,6 +203,14 @@
         </div>
     </div>
 
+
+    <script>
+        import { Application } from '@splinetool/runtime';
+
+        const canvas = document.getElementById('canvas3d');
+        const app = new Application(canvas);
+        app.load('https://prod.spline.design/RNA5Be3qhtKS3zn8/scene.splinecode');
+    </script>
     <script src="js/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

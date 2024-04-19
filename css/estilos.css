@@ -130,15 +130,20 @@ i {
 /* JUMBOTRON */
 
 .jumbotron-index {
-    height: 500px;
+    height: 500px; /* Establece la altura del jumbotron en 500px */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente el contenido */
+    overflow: hidden; /* Evita que el video se desborde del jumbotron */
 }
 
-.proyecto1-img1 {
-    height: 350px;
-    background: url(../img/img-aboutUs.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(0px);
+.jumbotron-index video {
+    min-width: 100%; /* Asegura que el video tenga al menos el ancho del jumbotron */
+    min-height: 100%; /* Asegura que el video tenga al menos la altura del jumbotron */
+    width: auto; /* Permite que el video mantenga su aspecto original */
+    height: auto; /* Permite que el video mantenga su aspecto original */
+    object-fit: contain; /* Escala el video para que quepa dentro del jumbotron */
+    object-position: center center; /* Centra el video tanto horizontal como verticalmente */
 }
 
 .proyecto-img {
@@ -160,7 +165,7 @@ i {
 
 .jumbo-empresa {
     background: url(../img/jumbo-empresa.jpg);
-    background-position: 0 -535px;
+    background-position: center; /* Centra la imagen horizontalmente y verticalmente */
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -168,14 +173,15 @@ i {
 
 .jumbo-proyectos {
     background: url(../img/jumbo-proyecto.jpg);
-    background-position: 0 -90px;
+    background-position: start;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 
 .jumbo-contacto {
-    background: url(../img/img-aboutUs.jpg);
+    background: url(../img/jumbo-contacto.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
