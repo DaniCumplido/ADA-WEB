@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ADA L'H, S.L.">
+    <link rel="shortcut icon" href="img/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>ADA L'H</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="fixed-top" style="background-color: #0E0E0E;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg rounded">
+                <div class="container-fluid">
+                    <a href="index.html"
+                        class="d-flex align-items-center navbar-brand col-lg-3 me-0 text-decoration-none">
+                        <img class="bi me-2" width="45" height="45" src="img/logo-blanco.png">
+                        <span class="fs-5 fw-semibold lh-1 text-light">ADA L'H</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel" style="background-color: #0E0E0E;">
+                        <div class="offcanvas-header">
+                            <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                            <a href="index.html" id="offcanvasNavbarLabel"
+                                class="offcanvas-title d-flex align-items-center navbar-brand col-lg-3 me-0 text-decoration-none">
+                                <img class="bi me-2" width="45" height="45" src="img/logo-blanco.png">
+                                <span class="fs-5 fw-semibold lh-1 text-light">ADA L'H</span>
+                            </a>
+                            <a type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></a>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav col-lg-8 justify-content-lg-center align-items-lg-center">
+                                <li><a href="index.html"
+                                        class="nav-link text-light fw-semibold px-2 nav-link-activo">INICIO</a>
+                                </li>
+                                <li><a href="empresa.html"
+                                        class="nav-link text-light fw-semibold nav-link-efecto px-2">EMPRESA</a></li>
+                                <li><a href="proyectos.html"
+                                        class="nav-link text-light fw-semibold nav-link-efecto px-2">PROYECTOS</a>
+                                </li>
+                                <li><a href="servicios.html"
+                                        class="nav-link text-light fw-semibold nav-link-efecto px-2">SERVICIOS</a>
+                                </li>
+                            </ul>
+                            <div class="d-lg-flex col-lg-4 justify-content-lg-end mt-lg-0 mt-3">
+                                <a href="contacto.html" type="button" class="btn ">CONTACTAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- CARROUSEL -->
+    <div id="carouselJumbotron" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselJumbotron" data-bs-slide-to="0" class="active"
+                aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselJumbotron" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#carouselJumbotron" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="jumbotron-index img-flitro">
+                    <video autoplay loop muted playsinline>
+                        <source src="video/video.mp4" type="video/mp4"
+                            style="width: 100%; object-fit: cover; object-position: 0 -100px;">
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <span class="badge bg-badge-secundario mb-2">INNOVACIÓN CONSTANTE</span>
+                        <h1 class="display-6 fw-bold lh-1 text-light">¡DESCÚBRE NUESTRA <span
+                                class="texto-degradado">ESENCIA</span>!</h1>
+                        <p class="text-light mt-2 lh-lg fs-5">Somos pioneros en la innovación, ofreciendo soluciones
+                            creativas y duraderas en cada proyecto</p>
+                        <p><a class="btn" href="empresa.html">Conoce más</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron-index img-flitro">
+                    <video autoplay loop muted playsinline
+                        style="width: 100%; object-fit: cover; object-position: 0 -1000px;">
+                        <source src="video/video-colocarCristalizquierda.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <span class="badge bg-badge-secundario mb-2">COMPROMISO CON LA CALIDAD</span>
+                        <h1 class="display-6 fw-bold lh-1 text-light">¡CONOCE NUESTRA <span
+                                class="texto-degradado">DEDICACIÓN</span>!</h1>
+                        <p class="text-light mt-2 lh-lg fs-5">Nos comprometemos a proporcionar productos y servicios de
+                            la
+                            más alta calidad, superando expectativas</p>
+                        <p><a class="btn" href="empresa.html">Descubre más</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="jumbotron-index img-flitro">
+                    <video autoplay loop muted playsinline
+                        style="width: 100%; object-fit: cover; object-position: 0 -900px;">
+                        <source src="video/video-colocarCristalDerecha.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <span class="badge bg-badge-secundario mb-2">EXCELENCIA EN CADA DETALLE</span>
+                        <h1 class="display-6 fw-bold lh-1 text-light">¡EXPLORA NUESTRA <span
+                                class="texto-degradado">EXCELENCIA</span>!</h1>
+                        <p class="text-light mt-2 lh-lg fs-5">Cada proyecto refleja nuestra dedicación a la excelencia
+                            en
+                            el servicio y la atención al detalle</p>
+                        <p><a class="btn" href="proyectos.html">Ver proyectos</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselJumbotron" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselJumbotron" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- COLABORATORS SLIDER -->
+    <div class="container pt-5">
+        <div class="text-center pb-3">
+            <h2 class="text-uppercase texto-feature" style="font-size: 16px;">
+                elección de una
+                <b class="texto-titulo">
+                    amplia red
+                </b>
+                de socios
+            </h2>
+        </div>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="img/logo-aok.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-dolmen.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-archs.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-cortizo.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-bynavas.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-hidetech.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-indalsu.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-nouCastor.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-schuco.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-stilcondal.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-aok.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-dolmen.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-archs.png" height="100" width="250" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="img/logo-cortizo.png" height="100" width="250" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT US -->
+    <div class="container col-xxl-8 px-4 py-5" data-aos="fade-up">
+        <!-- CONTENT -->
+        <div class="row align-items-center g-4">
+            <!-- IMG -->
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="img/img-aboutUs.jpg" class="d-block rounded mx-lg-auto img-fluid" width="500" height="700"
+                    loading="lazy">
+            </div>
+            <!-- TEXT + STATS -->
+            <div class="col-lg-6">
+                <div class="text-center mb-4">
+                    <span class="badge bg-badge-primario mb-2">SOBRE NOSOTROS</span>
+                    <h1 class="display-6 fw-bold lh-1 text-center">¿QUIÉNES <span class="texto-degradado">SOMOS</span>?
+                    </h1>
+                </div>
+                <!-- TEXT -->
+                <p class="mb-4" style="font-size: 18px;">
+                    Descubre la esencia de nuestra empresa de carpintería de aluminio. En ADA L'Hospitalet, nos
+                    dedicamos a ofrecer soluciones innovadoras con un compromiso inquebrantable con la calidad y la
+                    excelencia en cada proyecto.
+                    <br><br>
+                    Conócenos mejor y descubre cómo transformamos ideas en realidades duraderas, creando espacios únicos
+                    y funcionales.
+                </p>
+                <!-- STATS -->
+                <!-- Foto de <a href="https://unsplash.com/es/@markusspiske?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Markus Spiske</a> en <a href="https://unsplash.com/es/fotos/fotografia-de-angulo-bajo-de-edificios-de-gran-altura-UEm6e58b9DY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
+                <div class="row statswrapper">
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h2 class="num fw-bold fs-1" data-val="500">000</h2>
+                            <div class="row" style="height: 50px; width: 35px;">
+                                <div class="col-md-12">
+                                    <h2 class="fw-bold lh-1"
+                                        style="font-size: 25px; right: 0; align-items: start; justify-content: start;">
+                                        +</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lead text-center texto-contador">clientes satisfechos</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h2 class="num fw-bold fs-1" data-val="2500">000</h2>
+                            <div class="row" style="height: 50px; width: 35px;">
+                                <div class="col-md-12">
+                                    <h2 class="fw-bold lh-1"
+                                        style="font-size: 25px; right: 0; align-items: start; justify-content: start;">
+                                        +</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lead text-center texto-contador">proyectos completados</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h2 class="num fw-bold fs-1" data-val="25">000</h2>
+                            <div class="row" style="height: 50px; width: 35px;">
+                                <div class="col-md-12">
+                                    <h2 class="fw-bold lh-1"
+                                        style="font-size: 25px; right: 0; align-items: start; justify-content: start;">
+                                        +</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="lead text-center texto-contador">años de<br>experiencia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURED PROJECTS -->
+    <div class="py-5 bg-negro">
+        <div class="container col-xxl-8 px-4">
+            <!-- SECTION TITLE -->
+            <div class="text-center" data-aos="fade-up">
+                <span class="badge bg-badge-secundario mb-2">PROYECTOS DESTACADOS</span>
+                <h1 class="display-6 fw-bold lh-1 text-center text-light">¡NUESTROS MEJORES <span
+                        class="texto-degradado">PROYECTOS</span>!</h1>
+                <p class="text-light mt-4 lh-lg fs-5" style="padding-right: 10%; padding-left: 10%;">Explora nuestros
+                    proyectos destacados que han dejado huella.<br>Cada uno respaldado por nuestro compromiso y
+                    excelencia
+                    en carpintería de aluminio.</p>
+            </div>
+            <!-- PROJECTS -->
+            <div class="container row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 pt-4">
+                <!-- PROJECT 1 -->
+                <div class="col proyecto obranueva hidetech angra" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="card shadow-sm">
+                        <div id="proyecto1Carrousel" class="carousel slide mb-6">
+                            <!-- data-bs-ride="carousel" --><!-- id="myCarousel" -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#proyecto1Carrousel" data-bs-slide-to="0"
+                                    class="active" aria-label="Slide 1" aria-current="true"></button>
+                                <button type="button" data-bs-target="#proyecto1Carrousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2" class=""></button>
+                                <button type="button" data-bs-target="#proyecto1Carrousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#proyecto1Carrousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#proyecto1Carrousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <li class="dropdown nav-link">
+                                    <a class="nav-link dropdown-toggle text-body-secondary" href="#!" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Etiquetas
+                                    </a>
+                                    <ul class="dropdown-menu p-2">
+                                        <li><a class="dropdown-item texto-titulo fw-semibold" href="#!">Obra Nueva</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <small>2023</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT 2 -->
+                <div class="col proyecto obranueva hidetech angra" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="card shadow-sm">
+                        <div id="proyecto2Carrousel" class="carousel slide mb-6">
+                            <!-- data-bs-ride="carousel" --><!-- id="myCarousel" -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#proyecto2Carrousel" data-bs-slide-to="0"
+                                    class="active" aria-label="Slide 1" aria-current="true"></button>
+                                <button type="button" data-bs-target="#proyecto2Carrousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2" class=""></button>
+                                <button type="button" data-bs-target="#proyecto2Carrousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#proyecto2Carrousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#proyecto2Carrousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <li class="dropdown nav-link">
+                                    <a class="nav-link dropdown-toggle text-body-secondary" href="#!" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Etiquetas
+                                    </a>
+                                    <ul class="dropdown-menu p-2">
+                                        <li><a class="dropdown-item texto-titulo fw-semibold" href="#!">Obra Nueva</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <small>2023</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT 3 -->
+                <div class="col proyecto obranueva hidetech angra" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="card shadow-sm">
+                        <div id="proyecto3Carrousel" class="carousel slide mb-6">
+                            <!-- data-bs-ride="carousel" --><!-- id="myCarousel" -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#proyecto3Carrousel" data-bs-slide-to="0"
+                                    class="active" aria-label="Slide 1" aria-current="true"></button>
+                                <button type="button" data-bs-target="#proyecto3Carrousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2" class=""></button>
+                                <button type="button" data-bs-target="#proyecto3Carrousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="proyecto-img img-flitro"></div>
+                                    <div class="container">
+                                        <div class="carousel-caption">
+                                            <p class="text-light">Titulo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#proyecto3Carrousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#proyecto3Carrousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <li class="dropdown nav-link">
+                                    <a class="nav-link dropdown-toggle text-body-secondary" href="#!" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Etiquetas
+                                    </a>
+                                    <ul class="dropdown-menu p-2">
+                                        <li><a class="dropdown-item texto-titulo fw-semibold" href="#!">Obra Nueva</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <small>2023</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SEE MORE BTN -->
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="proyectos.html" class="btn text-decoration-none icon-link-hover text-light">
+                    Ver más proyectos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS SLIDER -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <!-- SECTION TITLE -->
+        <div class="text-center mb-4" data-aos="fade-up">
+            <span class="badge bg-badge-primario mb-2">VALORACIONES</span>
+            <h1 class="display-6 fw-bold lh-1 text-center">¿QUÉ <span class="texto-degradado">OPINAN</span> de NOSOTROS?
+            </h1>
+            <p class="mt-4 lh-lg fs-5" style="padding-right: 10%; padding-left: 10%;">Descubre lo que dicen nuestros
+                clientes y colaboradores.<br>Sus experiencias respaldan nuestra calidad y compromiso en cada proyecto.
+            </p>
+        </div>
+        <!-- CARROUSEL -->
+        <div id="carouselTestimonials" class="carousel slide" data-aos="zoom-in-up">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1" style="background-color: #192335;"></button>
+                <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="1" aria-label="Slide 2"
+                    style="background-color: #192335;"></button>
+                <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="2" aria-label="Slide 3"
+                    style="background-color: #192335;"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- TESTIMONIAL 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center pt-4 mb-4">
+                        <div class="card mb-3" style="max-width: 1000px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/img-aboutUs.jpg" class="img-fluid rounded-start" alt="..."
+                                        style="height: 300px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="p-4 card-body">
+                                        <img src="img/clients-logo-1.svg" alt="..." style="width: 200px;" class="mb-2">
+                                        <p class="card-text">"Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit.
+                                            Asperiores expedita dolor iusto, sunt temporibus perspiciatis laborum
+                                            consequuntur
+                                            doloribus nostrum eligendi illo."</p>
+                                        <p class="card-text">
+                                            <small class="texto-titulo fw-bold">Daniel Cumplido</small>
+                                            <br>
+                                            <small>Arcitecto en Archs Constructora</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TESTIMONIAL 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center pt-4 mb-4">
+                        <div class="card mb-3" style="max-width: 1000px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/img-aboutUs.jpg" class="img-fluid rounded-start" alt="..."
+                                        style="height: 300px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="p-4 card-body">
+                                        <img src="img/clients-logo-2.svg" alt="..." style="width: 200px;" class="mb-2">
+                                        <p class="card-text">"Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit.
+                                            Asperiores expedita dolor iusto, sunt temporibus perspiciatis laborum
+                                            consequuntur
+                                            doloribus nostrum eligendi illo."</p>
+                                        <p class="card-text">
+                                            <small class="texto-titulo fw-bold">Daniel Cumplido</small>
+                                            <br>
+                                            <small>Arcitecto en Archs Constructora</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TESTIMONIAL 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center pt-4 mb-4">
+                        <div class="card mb-3" style="max-width: 1000px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="img/img-aboutUs.jpg" class="img-fluid rounded-start" alt="..."
+                                        style="height: 300px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="p-4 card-body">
+                                        <img src="img/clients-logo-3.svg" alt="..." style="width: 200px;" class="mb-2">
+                                        <p class="card-text">"Lorem ipsum dolor sit amet
+                                            consectetur
+                                            adipisicing elit.
+                                            Asperiores expedita dolor iusto, sunt temporibus perspiciatis laborum
+                                            consequuntur
+                                            doloribus nostrum eligendi illo."</p>
+                                        <p class="card-text">
+                                            <small class="texto-titulo fw-bold">Daniel Cumplido</small>
+                                            <br>
+                                            <small>Arcitecto en Archs Constructora</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"
+                    style="filter: invert(1) grayscale(100);"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"
+                    style="filter: invert(1) grayscale(100);"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTACT JUMP TO ACTION -->
+    <div class="container py-5" data-aos="fade-right">
+        <div class="p-5 text-center rounded-3 bg-negro">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-7">
+                    <div class="text-center text-md-start">
+                        <h1 class="display-6 fw-bold lh-1 text-light">¿TIENES una <span class="texto-degradado">IDEA
+                                INNOVADORA</span>? ¡HAGÁMOSLA REALIDAD!
+                        </h1>
+                        <p class="mt-4">Diseños únicos y soluciones personalizadas para tu proyecto.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 animate__animated animate__pulse animate__delay-2s animate__repeat-2">
+                    <div class="text-center">
+                        <a href="contacto.html" class="btn">Cuéntanos tu Proyecto..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="pt-2 bg-negro">
+        <div class="border-top">
+            <div class="container py-3">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center">
+                    <p class="col-md-4 mb-0 text-light">© 2024 ADA L'Hospitalet, S.L.</p>
+
+                    <a href="https://www.instagram.com/adalhospitalet" target="_blank"
+                        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <i class="bi bi-instagram text-light fs-4"></i>
+                    </a>
+
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="index.html"
+                                class="nav-link px-2 text-light nav-link-efecto">Inicio</a></li>
+                        <li class="nav-item"><a href="empresa.html"
+                                class="nav-link px-2 text-light nav-link-efecto">Empresa</a></li>
+                        <li class="nav-item"><a href="proyectos.html"
+                                class="nav-link px-2 text-light nav-link-efecto">Proyectos</a>
+                        </li>
+                        <li class="nav-item"><a href="servicios.html"
+                                class="nav-link px-2 text-light nav-link-efecto">Servicios</a>
+                        </li>
+                        <li class="nav-item"><a href="contacto.html"
+                                class="nav-link px-2 text-light nav-link-efecto">Contacto</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts-index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
